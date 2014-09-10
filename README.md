@@ -18,9 +18,9 @@ Technical features:
 
 * DB is designed on server-side, it is based on MySQL.
 * App-server communication:
-     * App->server. In app there is performed a HTTP POST action to specific URL on a server, each URL points to PHP script.
-     * Server->DB->Server. For particular situations there are prepared PHP scripts on server side. They can require data to be passed on them, in order to commit actions. If they receive required data they commit a query on MySQL DB. Query result are handled via PHP and printed out as JSON Objects.
-     * Server->App.  In app there is retrieved a HTTP response (string containing JSON Object) and it is converted to JSONObject.
+     * App->PHP script. In app there is performed a HTTP POST action to specific URL on a server, each URL points to PHP script.
+     * PHP script->DB->PHP script. For particular situations there are prepared PHP scripts on server side. They can require data to be passed on them, in order to commit actions. If they receive required data they commit a query on MySQL DB. Query result are handled via PHP and printed out as JSON Objects.
+     * PHP script->App.  In app there is retrieved a HTTP response (string containing JSON Object) and it is converted to JSONObject.
 * Adding a post is divided into 3 steps:
      * most of pickers were presented in DialogFragment;
      * combined a DatePicker, TimePicker and SeekBar to select leaving date and time;

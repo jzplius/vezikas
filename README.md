@@ -1,3 +1,5 @@
+Download .apk at http://goo.gl/yrDovS
+
 NOTE THAT:
 =========
 
